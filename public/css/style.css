@@ -1,53 +1,18 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 16 |     background: $colour-secondary;
+ *    |                 ^^^^^^^^^^^^^^^^^
+ *    '
+ *   sass\base\_base.scss 16:17  @import
+ *   sass\main.scss 6:9          root stylesheet */
 
-html {
-  font-size: 62.5%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 16 \2502      background: $colour-secondary;\a    \2502                  ^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\base\\_base.scss 16:17  @import\a   sass\\main.scss 6:9          root stylesheet";
 }
-
-body {
-  box-sizing: border-box;
-  background: #001534;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #15DEA5;
-  font-size: 2rem;
-  font-weight: 100;
-  line-height: 1.7;
-}
-
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 5rem;
-  font-style: italic;
-}
-
-textarea {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
-}
-
-button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 2.75rem;
-}
-
-.btn {
-  padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
-  background: #001534;
-  cursor: pointer;
-}
-/*# sourceMappingURL=style.css.map */
