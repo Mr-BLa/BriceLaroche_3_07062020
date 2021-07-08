@@ -1,0 +1,24 @@
+.selection_lieu{
+    background-color: $colour-greydarker;
+    box-shadow: inset 0 2px 4px $colour-greydarker-shadow;
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        &__recherche{
+            background-color: $colour-greydarker;
+            border-width: 0;
+            padding: 0.8rem 1rem 0.8rem 1rem;
+        }
+}
+
+.container_search{
+    margin: 0;
+    padding: 0 0 0 2rem;
+}
+
+.icone_map{
+    font-weight: 1000;
+    color: $colour-blackgrey;
+}

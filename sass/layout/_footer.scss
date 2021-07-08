@@ -1,0 +1,44 @@
+.footer{
+    margin: 0;
+    padding: 1.25rem;
+    background-color: $colour-blackgrey;
+    color: $colour-white;
+
+    &__logo{
+        margin: 0;
+        filter: invert(1)
+    }
+
+    &__nav{
+        &__ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.icone_ohmyfood_footer{
+    width: 110px;
+    padding: 0 0 1rem 0;
+}
+
+.nav__link{
+    text-decoration: none;
+    padding: 0 0 0.5rem 0;
+
+    &__a{
+        text-decoration: none;
+        color: $colour-white;
+    }
+}
+
+.icone_fourchette{
+    font-size: 0.9em;
+    padding-right: 0.7em;
+}
+
+.icone_mains{
+    font-size: 0.7em;
+    padding-right: 0.7em;
+}

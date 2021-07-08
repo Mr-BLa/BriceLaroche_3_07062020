@@ -1,3 +1,15 @@
-.btn {
-    @include btn
+.bouton_rechercher{
+    color: $colour-white;
+    border-radius: 50px;
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+    background: rgb(147,86,220);
+    background: linear-gradient(355deg, rgba(147,86,220,1) 28%, rgba(255,121,218,1) 100%);
+    border-width: 0;
+    font-size: 1em;
+    box-shadow:  0 5px 12px $colour-greydarker-shadow;
 }
+
+
+
+

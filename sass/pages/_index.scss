@@ -1,0 +1,158 @@
+/* SECTION 2 - SELECTION RESTAURANT*/
+
+.select{
+    background-color: $colour-grey;
+    padding: 2.5rem 0;
+
+        &__h2, &__txt, &__bouton{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+}
+
+.select__h2, .select__txt{
+    padding: 0 0 1rem 0;
+}
+
+
+
+/* SECTION 3 - FONCTIONNEMENT*/
+
+.fonct{
+    padding: 3rem 1.25rem;
+
+    &__h2{
+        padding: 0 0 1.5rem 0;
+    }
+
+    &__filtres{
+        display: flex; 
+        flex-direction: column;
+        
+
+        &__link{
+            text-decoration: none;
+            background-color: $colour-grey;
+            padding: 1.8rem 1rem;
+            margin: 0.8rem 0 0.8rem 0.9rem;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            box-shadow:  0 5px 12px $colour-greydarker-shadow;
+            
+            &__num{
+                color: $colour-white;
+                background-color: $colour-purple;
+                padding: 4px 9px;
+                border-radius: 50px;
+                position: absolute; 
+                left: 1.3rem;
+            }
+
+            &__icon{
+                color: $colour-grey-text;
+                margin: 0 1.2rem 0 1rem;
+            }
+
+            &__txt{
+                color:black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.icone_filtres{
+    font-size: 1.2em;
+}
+
+
+
+/*SECTION 4 - RESTAURANTS*/
+
+.rest{
+    padding: 3rem 1.25rem 2rem 1.25rem;
+    background-color: $colour-grey;
+
+    &__h2{
+        padding: 0 0 1.5rem 0;
+    }
+
+    &__cards{
+
+    }
+}
+
+
+/*CARDS*/
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 20px;
+    height: 252px; 
+    width: 335px;
+    box-shadow: 0 5px 12px $colour-greydarker-shadow;
+    margin: 0 0 2rem 0;
+
+        &__figure{
+            height: 175px;
+            width: 100%;
+            margin: 0;
+            text-decoration: none;
+        
+
+            &__img{
+                border-radius: 20px 20px 0 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+}
+
+
+
+/*Figcaption*/
+.figure__figcaption{
+    display: flex;
+    justify-content: space-between;
+    height: 78px;
+
+    &__div{
+        display: flex; 
+        flex-direction: column;
+        padding: 10px 0 0 15px;
+
+        &__h3{
+            margin: 0;
+            padding: 0 0 5px 0;
+        }
+    }
+}
+
+.icone_coeur{
+    font-size: 1.5em;
+    padding: 25px 25px 0 0;
+}
+
+
+/*Mini carte: "Nouveau"*/
+.cards__new{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $colour-green;
+    color: $colour-green-txt;
+    width: 80px; 
+    height: 30px; 
+    position: absolute;
+    right: 33px;
+
+    &__txt{
+        display: block;
+        text-align: center;
+    }
+}
