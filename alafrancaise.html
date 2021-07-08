@@ -28,153 +28,136 @@
 
 
 <!--HEADER-->
-        <header class="header">
-            <i class="fas fa-arrow-left"></i>
-            <h1 class="header__logo">
-                <img src="images/logo/ohmyfood@2x.svg" alt="Oh My Food" id="icone_ohmyfood">
-            </h1>
+        <header class="header header-menu">
+            <a href="index.html" class="header-menu__link">
+                <i class="fas fa-arrow-left header-menu__icone_fleche"></i>
+                <h1 class="header__logo">
+                    ohmyfood
+                </h1>
+            </a>
         </header>
 
 
 
-<!--BLOC PAGE-->
-        <main class="bloc-page">
-
-
-
-            <!--SECTION 1 - Photo-->
-            <a href="#" class="&__cards">
-                <figure class="cards__figure">
-                    <img src="images/restaurants/a_la_francaise.jpg"
-                        alt="À la française - Cité Rouge"
-                        class="figure__img">
-                
-                    <figcaption class="figure__figcaption">
-                        <h1 class="figcaption__h1"><strong>À la française</strong></h1>
-                            <!--Coeur-->
-                        <div class="figcaption__coeur">
-                            <i class="far fa-heart"></i>
-                        </div>
-                    </figcaption>
-                    
-                </figure>
-            </a>
-
-
-
-            <!--SECTION 2 - ENTRÉES-->
-            <section class="menu">
-
-                <h2 class="menu__h2">ENTRÉES</h2>
-
-                <a href="#" class="menu__cards">
-                    <div class="cards__div-info">
-                        <h3 class="div-info__h3"><strong>Tartare de poulpe acidulé</strong></h3>
-                        <div class="div-info__div-2span">
-                            <span class="div-2span__span-txt">Aux zestes d'orange</span><span class="div-2span__span-tarif"><strong>25€</strong></span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="menu__cards">
-                    <div class="cards__div-info">
-                        <h3 class="div-info__h3"><strong>Velouté de légumes d'antan</strong></h3>
-                        <div class="div-info__div-2span">
-                            <span class="div-2span__span-txt">Carotte, panais, topinambour</span><span class="div-2span__span-tarif"><strong>35€</strong></span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="menu__cards">
-                    <div class="cards__div-info">
-                        <h3 class="div-info__h3"><strong>Soupe à l'oignon</strong></h3>
-                        <div class="div-info__div-2span">
-                            <span class="div-2span__span-txt">Revisitée</span><span class="div-2span__span-tarif"><strong>20€</strong></span>
-                        </div>
-                    </div>
-                </a>
-
-            </section>
-
-
-
-            <!--SECTION 3 - PLATS-->
-            <section class="menu">
-                
-                <h2 class="menu__h2">PLATS</h2>
-
-                <a href="#" class="menu__cards">
-                    <div class="cards__div-info">
-                        <h3 class="div-info__h3"><strong>Coquilles Saint-Jacques</strong></h3>
-                        <div class="div-info__div-2span">
-                            <span class="div-2span__span-txt">Accompagnées d'une purée de panais</span><span class="div-2span__span-tarif"><strong>40€</strong></span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="menu__cards">
-                    <div class="cards__div-info">
-                        <h3 class="div-info__h3"><strong>Magret de canard</strong></h3>
-                        <div class="div-info__div-2span">
-                            <span class="div-2span__span-txt">Et parmentier de pommes de terre</span><span class="div-2span__span-tarif"><strong>35€</strong></span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="menu__cards">
-                    <div class="cards__div-info">
-                        <h3 class="div-info__h3"><strong>Pigeonneau d’Ille-et-Vilaine</strong></h3>
-                        <div class="div-info__div-2span">
-                            <span class="div-2span__span-txt">Sur son lit de gnocchis aux légumes</span><span class="div-2span__span-tarif"><strong>44€</strong></span>
-                        </div>
-                    </div>
-                </a>
-
-            </section>
-
-
-
-            <!--SECTION 4 - DESSERTS-->
-            <section class="menu">
-                
-                <h2 class="menu__h2">DESSERTS</h2>
-
-                <a href="#" class="menu__cards">
-                    <div class="cards__div-info">
-                        <h3 class="div-info__h3"><strong>Pétales de violettes glacés</strong></h3>
-                        <div class="div-info__div-2span">
-                            <span class="div-2span__span-txt">Et purée de noisettes</span><span class="div-2span__span-tarif"><strong>18€</strong></span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="menu__cards">
-                    <div class="cards__div-info">
-                        <h3 class="div-info__h3"><strong>Fondant au chocolat</strong></h3>
-                        <div class="div-info__div-2span">
-                            <span class="div-2span__span-txt">Revisité</span><span class="div-2span__span-tarif"><strong>22€</strong></span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="menu__cards">
-                    <div class="cards__div-info">
-                        <h3 class="div-info__h3"><strong>Millefeuille croustillant</strong></h3>
-                        <div class="div-info__div-2span">
-                            <span class="div-2span__span-txt">Myrtilles et pâte d’amande</span><span class="div-2span__span-tarif"><strong>23€</strong></span>
-                        </div>
-                    </div>
-                </a>
-
-            </section>
-
-            <!--SECTION 5 - Bouton Commander-->
-            <div class="menu__bouton">
-                <label id="label-commander" for="bouton-commander"></label>
-                <input type="submit" name="menu-commander" id="menu-commander" class="submit-commander" value="Commander"/>
+<!--SECTION 1 - Photo-->
+            <div class="div_photo">
+                <img src="images/restaurants/a_la_francaise.jpg"
+                    alt="À la française - Cité Rouge"
+                    class="div_photo__img">
             </div>
 
-        </main>
+            
+        <section class="menu">
+
+<!--SECTION 2 - H1-->
+            <h1 class="menu__h1">À la française<i class="far fa-heart icone_coeur-menu"></i></span></h1>
+
+            
+<!--SECTION 3 - ENTRÉES-->
+            <h2 class="menu__h2">ENTRÉES</h2>
+
+                <a href="#" class="menu__cards">
+                    <div class="menu__cards__info">
+                        <h3 class="menu__cards__info__h3"><strong>Tartare de poulpe acidulé</strong></h3>
+                        <div class="menu__cards__info__div-2span">
+                            <span class="menu__cards__info__div-2span__span-txt">Aux zestes d'orange</span><span class="menu__cards__info__div-2span__span-tarif"><strong>25€</strong></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="menu__cards">
+                    <div class="menu__cards__info">
+                        <h3 class="menu__cards__info__h3"><strong>Velouté de légumes d'antan</strong></h3>
+                        <div class="menu__cards__info__div-2span">
+                            <span class="menu__cards__info__div-2span__span-txt">Carotte, panais, topinambour</span><span class="menu__cards__info__div-2span__span-tarif"><strong>35€</strong></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="menu__cards">
+                    <div class="menu__cards__info">
+                        <h3 class="menu__cards__info__h3"><strong>Soupe à l'oignon</strong></h3>
+                        <div class="menu__cards__info__div-2span">
+                            <span class="menu__cards__info__div-2span__span-txt">Revisitée</span><span class="menu__cards__info__div-2span__span-tarif"><strong>20€</strong></span>
+                        </div>
+                    </div>
+                </a>
+
+
+
+<!--SECTION 4 - PLATS-->
+                
+            <h2 class="menu__h2">PLATS</h2>
+
+                <a href="#" class="menu__cards">
+                    <div class="menu__cards__info">
+                        <h3 class="menu__cards__info__h3"><strong>Coquilles Saint-Jacques</strong></h3>
+                        <div class="menu__cards__info__div-2span">
+                            <span class="menu__cards__info__div-2span__span-txt">Accompagnées d'une purée de panais</span><span class="menu__cards__info__div-2span__span-tarif"><strong>40€</strong></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="menu__cards">
+                    <div class="menu__cards__info">
+                        <h3 class="menu__cards__info__h3"><strong>Magret de canard</strong></h3>
+                        <div class="menu__cards__info__div-2span">
+                            <span class="menu__cards__info__div-2span__span-txt">Et parmentier de pommes de terre</span><span class="menu__cards__info__div-2span__span-tarif"><strong>35€</strong></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="menu__cards">
+                    <div class="menu__cards__info">
+                        <h3 class="menu__cards__info__h3"><strong>Pigeonneau d’Ille-et-Vilaine</strong></h3>
+                        <div class="menu__cards__info__div-2span">
+                            <span class="menu__cards__info__div-2span__span-txt">Sur son lit de gnocchis aux légumes</span><span class="menu__cards__info__div-2span__span-tarif"><strong>44€</strong></span>
+                        </div>
+                    </div>
+                </a>
+
+
+
+<!--SECTION 5 - DESSERTS-->
+                
+            <h2 class="menu__h2">DESSERTS</h2>
+
+                <a href="#" class="menu__cards">
+                    <div class="menu__cards__info">
+                        <h3 class="menu__cards__info__h3"><strong>Pétales de violettes glacés</strong></h3>
+                        <div class="menu__cards__info__div-2span">
+                            <span class="menu__cards__info__div-2span__span-txt">Et purée de noisettes</span><span class="menu__cards__info__div-2span__span-tarif"><strong>18€</strong></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="menu__cards">
+                    <div class="menu__cards__info">
+                        <h3 class="menu__cards__info__h3"><strong>Fondant au chocolat</strong></h3>
+                        <div class="menu__cards__info__div-2span">
+                            <span class="menu__cards__info__div-2span__span-txt">Revisité</span><span class="menu__cards__info__div-2span__span-tarif"><strong>22€</strong></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="menu__cards">
+                    <div class="menu__cards__info">
+                        <h3 class="menu__cards__info__h3"><strong>Millefeuille croustillant</strong></h3>
+                        <div class="menu__cards__info__div-2span">
+                            <span class="menu__cards__info__div-2span__span-txt">Myrtilles et pâte d’amande</span><span class="menu__cards__info__div-2span__span-tarif"><strong>23€</strong></span>
+                        </div>
+                    </div>
+                </a>
+
+            
+            
+<!--SECTION 6 - Bouton Commander-->
+            <div class="menu__bouton">
+                <label id="label-commander" for="bouton-commander"></label>
+                <input type="submit" name="menu-commander" id="menu-commander" class="bouton_rechercher" value="Commander"/>
+            </div>
+
+        </section>
     </div>
 
 

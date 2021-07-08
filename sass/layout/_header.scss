@@ -1,12 +1,27 @@
-.header {
+.header{
     background-color: $colour-white;
     margin: 0;
     padding: 0;
+    position: relative;
     
-        &__logo{
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 20px 0 12.5px 0;
-        }
+    &__logo{
+        color: $colour-black;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 20px 0 12.5px 0;
+    }
+
+/*Header des menus*/
+    &-menu__link{
+        text-decoration: none;
+    }
+
+    &-menu__icone_fleche{
+        color: $colour-black;
+        position: absolute;
+        top: 32.5px;
+        left: 27.5px;
+        font-size: 1.3em;
+    }
 }

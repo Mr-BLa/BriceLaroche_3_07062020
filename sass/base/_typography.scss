@@ -6,12 +6,27 @@ html{
     font-size: 100%;
 }
 
-/*H1*/
 h1{
     font-family: 'Shrikhand', cursive;
     font-size: 2em;
     font-weight: 300;
 }
+
+h2{
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h4{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+
+
+        /*INDEX*/
 
 /*Section 1 - Selection Lieu*/
 .selection_lieu__recherche::placeholder{
@@ -19,13 +34,6 @@ h1{
     font-size: 1.3em;
     font-weight: bold;
     color: $colour-blackgrey;
-}
-
-/*H2*/
-h2{
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: bold;
 }
 
 /*Section 2 - Selection Restaurant*/
@@ -42,7 +50,7 @@ h2{
 
 /*Figcaption*/
 .figure__figcaption{
-    color: black;
+    color: $colour-black;
 }
 
 .figure__figcaption__div__h3{
@@ -50,9 +58,10 @@ h2{
 }
 
 
-/*H4*/
-h4{
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.2em;
-    font-weight: 200;
+
+        /*PAGES MENU*/
+
+.menu__h1{
+    font-size: 1.8em;
+    font-weight: 300;
 }

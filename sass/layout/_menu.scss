@@ -1,0 +1,16 @@
+.menu{
+    background-color: $colour-grey;
+    margin: -3rem 0 0 0;
+    padding: 0 13px;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+
+    &__h1{
+        margin: 0 0 1rem 0;
+        padding: 30px 30px 5px 5px;
+    }
+}
+
+.icone_coeur-menu{
+    padding-left: 78px;
+}
