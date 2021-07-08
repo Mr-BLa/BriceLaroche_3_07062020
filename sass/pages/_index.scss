@@ -4,16 +4,20 @@
     background-color: $colour-grey;
     padding: 2.5rem 0;
 
-        &__h2, &__txt, &__bouton{
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
+    &__h2,
+    &__txt, 
+    &__bouton{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__h2, 
+    &__txt{
+        padding: 0 0 1rem 0;
+    }
 }
 
-.select__h2, .select__txt{
-    padding: 0 0 1rem 0;
-}
 
 
 
@@ -78,10 +82,6 @@
     &__h2{
         padding: 0 0 1.5rem 0;
     }
-
-    &__cards{
-
-    }
 }
 
 
@@ -93,25 +93,38 @@
     text-decoration: none;
     border-radius: 20px;
     height: 252px; 
-    width: 335px;
     background-color: $colour-white;
     box-shadow: 0 5px 12px $colour-greydarker-shadow;
     margin: 0 0 2rem 0;
+    position: relative;
 
-        &__figure{
-            height: 175px;
-            width: 100%;
-            margin: 0;
-            text-decoration: none;
+    &__figure{
+        height: 175px;
+        width: 100%;
+        margin: 0;
+        text-decoration: none;
         
 
-            &__img{
-                border-radius: 20px 20px 0 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+        &__img{
+            border-radius: 20px 20px 0 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
+    }
+
+    &-nouveau::after{
+        content: "Nouveau";
+        display: inline-block;
+        padding: 5px 8px;
+        background-color: $colour-green;
+        color: $colour-green-txt;
+        border-radius: 2px;
+        position: absolute;
+        right: 13px;
+        top: 13px;
+        font-size: 0.9em;
+    }
 }
 
 
@@ -140,20 +153,3 @@
 }
 
 
-/*Mini carte: "Nouveau"*/
-.cards__new{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $colour-green;
-    color: $colour-green-txt;
-    width: 80px; 
-    height: 30px; 
-    position: absolute;
-    right: 33px;
-
-    &__txt{
-        display: block;
-        text-align: center;
-    }
-}
