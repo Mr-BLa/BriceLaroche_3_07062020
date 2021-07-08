@@ -210,6 +210,7 @@ h2 {
   border-radius: 20px;
   height: 252px;
   width: 335px;
+  background-color: #ffffff;
   box-shadow: 0 5px 12px #c3c3c3;
   margin: 0 0 2rem 0;
 }
@@ -230,6 +231,7 @@ h2 {
 .figure__figcaption {
   display: flex;
   justify-content: space-between;
+  background-color: #ffffff;
   height: 78px;
 }
 .figure__figcaption__div {
