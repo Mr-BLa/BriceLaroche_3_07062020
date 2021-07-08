@@ -231,7 +231,6 @@ h2 {
 .figure__figcaption {
   display: flex;
   justify-content: space-between;
-  background-color: #ffffff;
   height: 78px;
 }
 .figure__figcaption__div {
