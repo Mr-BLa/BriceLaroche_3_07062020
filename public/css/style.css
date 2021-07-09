@@ -64,6 +64,20 @@ h4 {
   font-weight: 300;
 }
 
+.menu__h2 {
+  font-size: 1em;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.menu__cards__info__h3 {
+  font-size: 1.15em;
+}
+
+.menu__cards__info__div-2span__span-txt {
+  font-weight: 300;
+}
+
 .bouton_rechercher {
   color: #ffffff;
   border-radius: 50px;
@@ -190,9 +204,41 @@ h4 {
   margin: 0 0 1rem 0;
   padding: 30px 30px 5px 5px;
 }
+.menu__h2 {
+  position: relative;
+  padding: 0 0 0 7px;
+}
+.menu__h2::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 7px;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
 
 .icone_coeur-menu {
   padding-left: 78px;
+}
+
+/*CARTES DU MENU*/
+.menu__cards {
+  text-decoration: none;
+  color: black;
+}
+.menu__cards__info {
+  margin: 1.5rem 0;
+  padding: 15px 30px 15px 10px;
+  background-color: #ffffff;
+  border-radius: 13px;
+  box-shadow: 0 2px 8px #c3c3c3;
+}
+.menu__cards__info__h3 {
+  margin: 0 0 0.5rem 0;
+}
+.menu__cards__info__div-2span {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* SECTION 2 - SELECTION RESTAURANT*/

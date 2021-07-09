@@ -9,8 +9,45 @@
         margin: 0 0 1rem 0;
         padding: 30px 30px 5px 5px;
     }
+
+    &__h2{
+        position: relative;
+        padding: 0 0 0 7px;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            left: 7px;
+            width: 40px;
+            border-bottom:3px solid $colour-green;
+        }
+    }
 }
 
 .icone_coeur-menu{
     padding-left: 78px;
+}
+
+
+/*CARTES DU MENU*/
+.menu__cards{
+    text-decoration: none;
+    color: black;
+    
+    &__info{
+        margin: 1.5rem 0;
+        padding: 15px 30px 15px 10px;
+        background-color: $colour-white;
+        border-radius: 13px;
+        box-shadow: 0 2px 8px $colour-greydarker-shadow;
+
+        &__h3{
+            margin: 0 0 0.5rem 0;
+        }
+        &__div-2span{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
