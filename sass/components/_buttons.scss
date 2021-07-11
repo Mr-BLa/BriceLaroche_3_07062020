@@ -8,6 +8,11 @@
     border-width: 0;
     font-size: 1em;
     box-shadow:  0 5px 12px $colour-greydarker-shadow;
+
+    &-menu{
+        padding: 1rem 3rem;
+        margin: 1.5rem 0 0 0;
+    }
 }
 
 
