@@ -71,7 +71,7 @@ h4 {
 }
 
 .menu__cards__info__h3 {
-  font-size: 1.15em;
+  font-size: 1.1em;
 }
 
 .menu__cards__info__div-2span {
@@ -79,6 +79,7 @@ h4 {
 }
 .menu__cards__info__div-2span__span-txt {
   font-weight: 300;
+  font-size: 0.9em;
 }
 .menu__cards__info__div-2span__span-tarif {
   font-size: 0.95em;
@@ -211,12 +212,13 @@ h4 {
   position: relative;
 }
 .menu__h1 {
-  margin: 0 0 1rem 0;
+  margin: 0;
   padding: 30px 28px 5px 5px;
 }
 .menu__h2 {
   position: relative;
   padding: 0 0 0 7px;
+  margin: 2.3rem 0 0 0;
 }
 .menu__h2::after {
   content: "";
@@ -227,8 +229,17 @@ h4 {
   border-bottom: 3px solid #99E2D0;
 }
 
-.icone_coeur-menu {
-  padding-left: 80px;
+.icone_coeur-francaise {
+  padding-left: 80.4px;
+}
+.icone_coeur-note_enchantee {
+  padding-left: 13.1px;
+}
+.icone_coeur-delice_sens {
+  padding-left: 28.8px;
+}
+.icone_coeur-palette_gout {
+  padding-left: 19.5px;
 }
 
 /*CARTES DU MENU*/
@@ -245,10 +256,18 @@ h4 {
 }
 .menu__cards__info__h3 {
   margin: 0 0 0.3rem 0;
+  padding: 0 2.5rem 0 0;
 }
 .menu__cards__info__div-2span {
   display: flex;
   justify-content: space-between;
+}
+.menu__cards__info__div-2span__span-txt {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu__cards__info__div-2span__span-tarif {
+  padding-left: 0.9rem;
 }
 
 /*BOUTON COMMANDER*/

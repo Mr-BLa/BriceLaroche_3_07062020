@@ -6,13 +6,14 @@
     position: relative;
 
     &__h1{
-        margin: 0 0 1rem 0;
+        margin: 0;
         padding: 30px 28px 5px 5px;
     }
 
     &__h2{
         position: relative;
         padding: 0 0 0 7px;
+        margin: 2.3rem 0 0 0;
 
         &::after{
             content: "";
@@ -25,9 +26,24 @@
     }
 }
 
-.icone_coeur-menu{
-    padding-left: 80px;
+.icone_coeur{
+    &-francaise{
+        padding-left: 80.4px;
+    }
+
+    &-note_enchantee{
+        padding-left: 13.1px;
+    }
+
+    &-delice_sens{
+        padding-left: 28.8px;
+    }
+
+    &-palette_gout{
+        padding-left: 19.5px;
+    }
 }
+
 
 
 /*CARTES DU MENU*/
@@ -44,10 +60,20 @@
 
         &__h3{
             margin: 0 0 0.3rem 0;
+            padding: 0 2.5rem 0 0;
         }
         &__div-2span{
             display: flex;
             justify-content: space-between;
+
+            &__span-txt{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            &__span-tarif{
+                padding-left: 0.9rem;
+            }
         }
     }
 }
