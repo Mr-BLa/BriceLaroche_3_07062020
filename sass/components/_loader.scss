@@ -21,6 +21,7 @@
     animation-name: fondu;
     animation-duration: 3s;
     animation-timing-function: ease-in;
+    visibility: hidden;
 
     &__cercle_exterieur{
         position: absolute;
@@ -54,7 +55,15 @@
 }
 
 @keyframes fondu {
-    0% {opacity: 1;}
-    75% {opacity: 1;}
-    100% {opacity: 0;}
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }

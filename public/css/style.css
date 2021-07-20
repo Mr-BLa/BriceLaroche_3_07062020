@@ -159,6 +159,7 @@ h4 {
   animation-name: fondu;
   animation-duration: 3s;
   animation-timing-function: ease-in;
+  visibility: hidden;
 }
 .loader__cercle_exterieur {
   position: absolute;
@@ -199,12 +200,14 @@ h4 {
 @keyframes fondu {
   0% {
     opacity: 1;
+    visibility: visible;
   }
   75% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 .header {
