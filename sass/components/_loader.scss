@@ -1,0 +1,60 @@
+/* LOADER */
+.centrer {
+    margin: 0 auto;
+}
+
+.loader{
+    position: absolute;
+    top: 79.5px;
+    width: 100%;
+    height: calc(100% - 79.5px);
+    opacity: 0;
+    background: $colour-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    z-index: 1;
+    animation-name: fondu;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+
+    &__cercle_exterieur{
+        position: absolute;
+        top: 52.797px;
+        left: calc(50% - 150px);
+        height: 300px;
+        width: 300px;
+        background: linear-gradient(355deg, rgba(147,86,220,1) 28%, rgba(255,121,218,1) 100%);
+        border-radius: 50%;
+        animation-duration: 4s;
+        animation-name: rotate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        }
+
+    &__cercle_interieur{
+        position: absolute;
+        top: 62.797px;
+        left: calc(50% - 140px);
+        height: 280px;
+        width: 280px;
+        background: $colour-white;
+        border-radius: 50%;
+        box-shadow: inset 0 2px 7px $colour-greydarker-shadow;
+        }
+}
+
+@keyframes rotate {
+    0% {transform:rotate(0deg);}
+    100% { transform:rotate(720deg); -webkit-transform:rotate(720deg); -moz-transform:rotate(720deg); -ms-transform:rotate(720deg); -o-transform:rotate(720deg); }
+}
+
+@keyframes fondu {
+    0% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
