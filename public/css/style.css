@@ -173,16 +173,17 @@ h4 {
   animation-name: rotate;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  box-shadow: #c3c3c3 0px 2px 4px 0px, #c3c3c3 0px 2px 16px 0px;
 }
 .loader__cercle_interieur {
   position: absolute;
-  top: 62.797px;
-  left: calc(50% - 140px);
-  height: 280px;
-  width: 280px;
+  top: 67.797px;
+  left: calc(50% - 135px);
+  height: 270px;
+  width: 270px;
   background: #ffffff;
   border-radius: 50%;
-  box-shadow: inset 0 2px 7px #c3c3c3;
+  box-shadow: inset #c3c3c3 0px 2px 7px 0px, inset #c3c3c3 0px 2px 7px 0px;
 }
 
 @keyframes rotate {
