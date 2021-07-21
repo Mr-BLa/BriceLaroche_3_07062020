@@ -9,6 +9,11 @@
     font-size: 1em;
     box-shadow:  0 5px 12px $colour-greydarker-shadow;
 
+    &:hover{
+        background: lighten($color: rgb(147,86,220), $amount: 9%);
+        box-shadow:  0px 7px 14px 5px $colour-greydarker-shadow;
+    }
+
     &-menu{
         padding: 1rem 3rem;
         margin: 1.5rem 0 0 0;
