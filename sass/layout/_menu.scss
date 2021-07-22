@@ -57,6 +57,7 @@
     margin: 1.5rem 0;
     width: calc(100% - 13px);
     overflow: hidden;
+    opacity: 1;
     padding: 0 0 0 10px;
 
     &__info{
@@ -101,8 +102,96 @@
 }
 
 
+
+/*Animation Menus*/
+
+.c1{
+    animation-name: apparition1; 
+    animation-duration: 2s; 
+    transition-timing-function: ease-in;
+}
+
+@keyframes apparition1 {
+    0% { 
+        opacity:0; 
+        margin-bottom: calc(1.5rem + 15px);
+    }
+    100% {
+        opacity:1;
+        margin-bottom: 1.5rem; 
+    }
+}
+
+
+
+.c2{
+    animation-name: apparition2; 
+    animation-duration: 2s; 
+    transition-timing-function: ease-in;
+}
+
+@keyframes apparition2 {
+    0% { 
+        opacity:0;
+        margin-bottom: calc(1.5rem + 15px);
+    }
+    10% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+
+.c3{
+    animation-name: apparition3; 
+    animation-duration: 2s; 
+    transition-timing-function: ease-in;
+}
+
+@keyframes apparition3 {
+    0% {
+        opacity:0;
+        margin-bottom: calc(1.5rem + 15px);
+    }
+    20% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+
+.c4{
+    animation-name: apparition4; 
+    animation-duration: 2s; 
+    transition-timing-function: ease-in;
+}
+
+@keyframes apparition4 {
+    0% {
+        opacity:0;
+        margin-bottom: calc(1.5rem + 15px);
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
 /*BOUTON COMMANDER*/
 .menu__bouton{
     display: flex;
     justify-content: center;
 }
+
