@@ -81,7 +81,6 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        display: inline-block;
 
         &__h3{
             margin: 0 0 0.3rem 0;
@@ -91,6 +90,7 @@
             overflow: hidden;
         }
         &__div-2span{
+            display: flex;
             padding: 0 13px 0 0;
             white-space: nowrap;
             text-overflow: ellipsis;
@@ -106,7 +106,6 @@
 
             &__span-tarif{
                 padding-left: 0.9rem;
-                width: 50px;
             }
         }
     }
@@ -117,7 +116,7 @@
     float: right;
     background-color: $colour-green;
     width: 0px; 
-    height: 76px;
+    height: 70px;
     justify-content: center;
     align-items: center;
 

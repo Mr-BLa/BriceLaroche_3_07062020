@@ -354,7 +354,6 @@ h4 {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  display: inline-block;
 }
 .menu__cards__info__h3 {
   margin: 0 0 0.3rem 0;
@@ -364,6 +363,7 @@ h4 {
   overflow: hidden;
 }
 .menu__cards__info__div-2span {
+  display: flex;
   padding: 0 13px 0 0;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -378,7 +378,6 @@ h4 {
 }
 .menu__cards__info__div-2span__span-tarif {
   padding-left: 0.9rem;
-  width: 50px;
 }
 
 .coche {
@@ -386,7 +385,7 @@ h4 {
   float: right;
   background-color: #99E2D0;
   width: 0px;
-  height: 76px;
+  height: 70px;
   justify-content: center;
   align-items: center;
 }
