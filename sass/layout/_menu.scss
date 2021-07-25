@@ -6,6 +6,7 @@
     position: relative;
 
     &__h1{
+        display: flex;
         margin: 0;
         padding: 30px 28px 5px 5px;
     }
@@ -28,20 +29,71 @@
 
 .icone_coeur{
     &-francaise{
-        padding-left: 91.6px;
+        margin-left: 91.2px;
     }
 
     &-note_enchantee{
-        padding-left: 31.8px;
+        margin-left: 31.4px;
     }
 
     &-delice_sens{
-        padding-left: 45.7px;
+        margin-left: 45.3px;
     }
 
     &-palette_gout{
-        padding-left: 37.4px;
+        margin-left: 37px;
     }
+}
+
+.icones{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coeur-vide{
+    width: 26px;
+    height: 26px;
+}
+
+.coeur-plein{
+    position: absolute; 
+    left: 0px;
+    bottom: 0px;
+    top: 5px;
+    height: 26px;
+    width: 26px;
+    visibility: hidden;
+}
+
+.icones:hover .coeur-vide{
+    display: none;
+}
+
+.icones:hover .coeur-plein{
+    animation-name: apparition;
+    animation-duration: 10s; 
+    transition-timing-function: ease-out;
+}
+
+@keyframes apparition {
+    0%{
+        visibility: visible;
+        color: $colour-pink;
+        opacity: 0; 
+    }
+
+    20%{
+        color: $colour-pink;
+        opacity: 1;
+    }
+
+    100%{
+        color: $colour-pink;
+        opacity: 1;
+    }
+
 }
 
 
