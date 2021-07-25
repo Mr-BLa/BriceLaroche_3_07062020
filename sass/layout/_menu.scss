@@ -28,19 +28,19 @@
 
 .icone_coeur{
     &-francaise{
-        padding-left: 80.4px;
+        padding-left: 91.6px;
     }
 
     &-note_enchantee{
-        padding-left: 13.1px;
+        padding-left: 31.8px;
     }
 
     &-delice_sens{
-        padding-left: 28.8px;
+        padding-left: 45.7px;
     }
 
     &-palette_gout{
-        padding-left: 19.5px;
+        padding-left: 37.4px;
     }
 }
 
@@ -48,9 +48,10 @@
 
 /*CARTES DU MENU*/
 .menu__cards{
+    position: relative;
     text-decoration: none;
     color: black;
-    display: block;
+    display: flex;
     background-color: #ffffff;
     border-radius: 13px;
     box-shadow: 0 2px 8px #c3c3c3;
@@ -58,32 +59,42 @@
     width: calc(100% - 13px);
     overflow: hidden;
     opacity: 1;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 13px;
+
+    &:hover .coche{
+            animation-name: derouler;
+            animation-duration: 10s;
+            transition-timing-function: linear;
+    }
+
+    &:hover .coche__check{
+        animation-name: tourner;
+        animation-duration: 1s;
+        transition-timing-function: ease-in;
+    }
 
     &__info{
         padding-right: 28px;
         width: 100%;
         position: relative;
         padding: 12px 0;
-
-        &::before{
-            content: "";
-            display: block;
-            background-color: $colour-green;
-            width: 95px; 
-            height: 100%;
-            position: absolute;
-            left: 100%;
-            top: 0;
-        }
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: inline-block;
 
         &__h3{
             margin: 0 0 0.3rem 0;
             padding: 0 2.5rem 0 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         &__div-2span{
-            display: flex;
-            justify-content: space-between;
+            padding: 0 13px 0 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
 
             &__span-txt{
                 white-space: nowrap;
@@ -101,7 +112,30 @@
     }
 }
 
+.coche{
+    display: flex;
+    float: right;
+    background-color: $colour-green;
+    width: 0px; 
+    height: 76px;
+    justify-content: center;
+    align-items: center;
 
+    &__check{
+        font-size: 1.7em;
+        color: $colour-white;
+    }
+}
+
+@keyframes derouler {
+    0% { width: 0px; }
+    10% { width: 95px; }
+    100% { width: 95px; }
+}
+
+@keyframes tourner {
+    from { transform: rotate(-360deg); }
+}
 
 /*Animation Menus*/
 
@@ -194,4 +228,3 @@
     display: flex;
     justify-content: center;
 }
-
