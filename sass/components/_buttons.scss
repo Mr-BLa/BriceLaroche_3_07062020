@@ -10,9 +10,15 @@
     box-shadow:  0 5px 12px $colour-greydarker-shadow;
 
     &:hover{
-        background: lighten($color: rgb(147,86,220), $amount: 9%);
+        transition: 0.3s all;
+        background: rgb(147,86,220);
+        background: linear-gradient(355deg, rgb(167, 100, 250) 28%, rgb(255, 152, 226) 100%);
         box-shadow:  0px 7px 14px 5px $colour-greydarker-shadow;
-    }
+        -webkit-transition: 0.3s all;
+        -moz-transition: 0.3s all;
+        -ms-transition: 0.3s all;
+        -o-transition: 0.3s all;
+}
 
     &-menu{
         padding: 1rem 3rem;

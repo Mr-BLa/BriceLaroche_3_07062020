@@ -75,6 +75,9 @@ body{
     font-size: 1.2em;
 }
 
+.fonct__filtres__link:hover .icone_filtres{
+    color: $colour-purple;
+}
 
 
 /*SECTION 4 - RESTAURANTS*/
@@ -149,11 +152,8 @@ body{
             padding: 0 0 5px 0;
         }
     }
+
+    &__coeur{
+        position: relative;
+    }
 }
-
-.icone_coeur{
-    font-size: 1.5em;
-    padding: 25px 25px 0 0;
-}
-
-
