@@ -1,3 +1,5 @@
+/*COULEURS*/
+/*PADDING*/
 body {
   width: 100%;
   margin: 0;
@@ -672,5 +674,7 @@ body {
 .figure__figcaption__coeur {
   position: relative;
 }
+
+/*MEDIA-QUERIES*/
 
 /*# sourceMappingURL=style.css.map */

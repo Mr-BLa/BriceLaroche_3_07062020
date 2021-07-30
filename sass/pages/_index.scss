@@ -28,7 +28,7 @@ body{
 /* SECTION 3 - FONCTIONNEMENT*/
 
 .fonct{
-    padding: 3rem 1.25rem;
+    padding: 3rem $padding-lat;
 
     &__h2{
         padding: 0 0 1.5rem 0;
@@ -83,7 +83,7 @@ body{
 /*SECTION 4 - RESTAURANTS*/
 
 .rest{
-    padding: 3rem 1.25rem 2rem 1.25rem;
+    padding: 3rem $padding-lat 2rem $padding-lat;
     background-color: $colour-grey;
 
     &__h2{
@@ -156,4 +156,28 @@ body{
     &__coeur{
         position: relative;
     }
+}
+
+
+
+/*MEDIA-QUERIES*/
+
+@media (min-width: 681px) and (max-width: 800px) {
+    $padding-lat: 2.3rem;
+}
+
+@media (min-width: 801px) and (max-width: 960px) {
+    $padding-lat: 2.65rem;
+}
+
+@media (min-width: 961px) and (max-width: 1024px) {
+    $padding-lat: 3.3rem;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    $padding-lat: 3.4rem;
+}
+
+@media (min-width: 1281px) {
+    $padding-lat: 4.3rem;
 }
