@@ -10,6 +10,14 @@
         background-color: $colour-greydarker;
         border-width: 0;
         padding: 0.8rem 1rem 0.8rem 1rem;
+
+        &:active{
+            -webkit-appearance: none;
+        }
+
+        &:focus-visible{
+            outline: 0;
+        }
     }
 }
 

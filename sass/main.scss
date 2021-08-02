@@ -8,16 +8,13 @@
 
 @import "./components/buttons";
 @import "./components/searchbar";
-@import "./components/menu__photo";
 @import "./components/loader";
 @import "./components/coeur";
 
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/menu";
+@import "./layout/menu__photo";
 
 
-
+@import "./pages/menu";
 @import "./pages/index";
-//@import "./pages/about";
-//@import "./pages/project";

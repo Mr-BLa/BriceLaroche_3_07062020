@@ -8,10 +8,6 @@
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.7s ease-out;
-    -webkit-transition: opacity 0.7s ease-out;
-    -moz-transition: opacity 0.7s ease-out;
-    -ms-transition: opacity 0.7s ease-out;
-    -o-transition: opacity 0.7s ease-out;
 }
 
 
@@ -30,13 +26,11 @@
 
 .cards__figure__figcaption__coeur:hover .coeur-vide{
     visibility: hidden;
-    animation-fill-mode: forwards;
 }
 
 .cards__figure__figcaption__coeur:hover .coeur-plein{
     visibility: visible;
     opacity: 1;
-    animation-fill-mode: forwards;
 }
 
 
