@@ -314,10 +314,34 @@ h4 {
   color: #000000;
   position: absolute;
   top: 32.5px;
-  left: 27.5px;
+  left: 7.33vw;
   font-size: 1.3em;
 }
 
+@media (min-width: 681px) and (max-width: 800px) {
+  .header-menu__icone_fleche {
+    font-size: 1.625em;
+    top: 51.5px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+  .header-menu__icone_fleche {
+    font-size: 1.755em;
+    top: 60.5px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .header-menu__icone_fleche {
+    font-size: 1.95em;
+    top: 75.5px;
+  }
+}
+@media (min-width: 1281px) {
+  .header-menu__icone_fleche {
+    font-size: 2em;
+    top: 88.5px;
+  }
+}
 .footer {
   margin: 0;
   padding: 1.25rem 5.3vw;
@@ -375,7 +399,7 @@ h4 {
 .menu {
   background-color: #f6f6f6;
   margin: -3rem 0 0 0;
-  padding: 0 13px 4rem 13px;
+  padding: 0 3.466vw 4rem 3.466vw;
   border-radius: 50px 50px 0 0;
   position: relative;
 }
