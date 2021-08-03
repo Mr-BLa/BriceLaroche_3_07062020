@@ -28,7 +28,7 @@ body{
 /* SECTION 3 - FONCTIONNEMENT*/
 
 .fonct{
-    padding: 3rem 1.25rem;
+    padding: 3rem 5.333vw;
 
     &__h2{
         padding: 0 0 1.5rem 0;
@@ -37,7 +37,6 @@ body{
     &__filtres{
         display: flex; 
         flex-direction: column;
-        
 
         &__link{
             text-decoration: none;
@@ -59,7 +58,7 @@ body{
                 padding: 4px 9px;
                 border-radius: 50px;
                 position: absolute; 
-                left: 1.3rem;
+                left: 5.546vw;
             }
 
             &__icon{
@@ -87,7 +86,7 @@ body{
 /*SECTION 4 - RESTAURANTS*/
 
 .rest{
-    padding: 3rem 1.25rem 2rem 1.25rem;
+    padding: 3rem 5.333vw 2rem 5.333vw;
     background-color: $colour-grey;
 
     &__h2{
@@ -167,31 +166,30 @@ body{
 /*MEDIA-QUERIES*/
 
 @media (min-width: 681px) and (max-width: 800px) {
-    .fonct {
-        padding: 3rem 2.3rem;
-    }
+
 }
 
-@media (min-width: 801px) and (max-width: 960px) {
-    .fonct {
-        padding: 3rem 2.65rem;
+@media (min-width: 801px) {
+    .rest__cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .cards{
+        width: 48.5%;
     }
 }
 
 @media (min-width: 961px) and (max-width: 1024px) {
-    .fonct {
-        padding: 3rem 3.3rem;
-    }
+    
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .fonct {
-        padding: 3rem 3.4rem;
-    }
 }
 
 @media (min-width: 1281px) {
-    .fonct {
-        padding: 3rem 4.3rem;
+    .cards{
+        width: 31.5%;
     }
 }

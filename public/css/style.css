@@ -18,6 +18,21 @@ h1 {
   font-weight: 300;
 }
 
+@media (min-width: 681px) and (max-width: 800px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.7em;
+  }
+}
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 3em;
+  }
+}
 h2 {
   margin: 0;
   font-size: 1.5em;
@@ -290,7 +305,7 @@ h4 {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 20px 0 12.5px 0;
+  padding: 5.333vw 0 3.333vw 0;
 }
 .header-menu__link {
   text-decoration: none;
@@ -305,7 +320,7 @@ h4 {
 
 .footer {
   margin: 0;
-  padding: 1.25rem;
+  padding: 1.25rem 5.3vw;
   background-color: #353535;
   color: #ffffff;
 }
@@ -530,7 +545,7 @@ body {
 
 /* SECTION 3 - FONCTIONNEMENT*/
 .fonct {
-  padding: 3rem 1.25rem;
+  padding: 3rem 5.333vw;
 }
 .fonct__h2 {
   padding: 0 0 1.5rem 0;
@@ -558,7 +573,7 @@ body {
   padding: 4px 9px;
   border-radius: 50px;
   position: absolute;
-  left: 1.3rem;
+  left: 5.546vw;
 }
 .fonct__filtres__link__icon {
   color: #5c5c5c;
@@ -579,7 +594,7 @@ body {
 
 /*SECTION 4 - RESTAURANTS*/
 .rest {
-  padding: 3rem 1.25rem 2rem 1.25rem;
+  padding: 3rem 5.333vw 2rem 5.333vw;
   background-color: #f6f6f6;
 }
 .rest__h2 {
@@ -643,29 +658,20 @@ body {
 }
 
 /*MEDIA-QUERIES*/
-@media (min-width: 681px) and (max-width: 800px) {
-  .fonct {
-    padding: 3rem 2.3rem;
+@media (min-width: 801px) {
+  .rest__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-}
-@media (min-width: 801px) and (max-width: 960px) {
-  .fonct {
-    padding: 3rem 2.65rem;
-  }
-}
-@media (min-width: 961px) and (max-width: 1024px) {
-  .fonct {
-    padding: 3rem 3.3rem;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .fonct {
-    padding: 3rem 3.4rem;
+
+  .cards {
+    width: 48.5%;
   }
 }
 @media (min-width: 1281px) {
-  .fonct {
-    padding: 3rem 4.3rem;
+  .cards {
+    width: 31.5%;
   }
 }
 
