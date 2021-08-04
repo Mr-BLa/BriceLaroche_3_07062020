@@ -313,7 +313,7 @@ h4 {
 .header-menu__icone_fleche {
   color: #000000;
   position: absolute;
-  top: 32.5px;
+  top: 7.73vw;
   left: 7.33vw;
   font-size: 1.3em;
 }
@@ -321,25 +321,25 @@ h4 {
 @media (min-width: 681px) and (max-width: 800px) {
   .header-menu__icone_fleche {
     font-size: 1.625em;
-    top: 51.5px;
+    top: 7.33vw;
   }
 }
 @media (min-width: 801px) and (max-width: 1024px) {
   .header-menu__icone_fleche {
     font-size: 1.755em;
-    top: 60.5px;
+    top: 7.33vw;
   }
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
   .header-menu__icone_fleche {
     font-size: 1.95em;
-    top: 75.5px;
+    top: 6.9vw;
   }
 }
 @media (min-width: 1281px) {
   .header-menu__icone_fleche {
     font-size: 2em;
-    top: 88.5px;
+    top: 6.66vw;
   }
 }
 .footer {
@@ -434,6 +434,7 @@ h4 {
   box-shadow: 0 2px 8px #c3c3c3;
   margin: 1.5rem 0;
   width: calc(100% - 13px);
+  max-width: 710px;
   overflow: hidden;
   opacity: 0;
   padding: 0 0 0 13px;
