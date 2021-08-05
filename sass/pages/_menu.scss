@@ -10,12 +10,14 @@
         justify-content: space-between;
         margin: 0;
         padding: 30px 23px 5px 5px;
+        max-width: 702px;
     }
 
     &__h2{
         position: relative;
-        padding: 0 0 0 7px;
-        margin: 2.3rem 0 0 0;
+        padding: 0;
+        margin: 2.3rem 0 0 7px;
+        max-width: 723px;
 
         &::after{
             content: "";
@@ -30,6 +32,7 @@
 
 
 
+
 /*CARTES DU MENU*/
 .menu__cards{
     position: relative;
@@ -40,11 +43,11 @@
     border-radius: 13px;
     box-shadow: 0 2px 8px #c3c3c3;
     margin: 1.5rem 0;
-    width: calc(100% - 13px);
-    max-width: 710px;
+    width: 100%;
+    max-width: 730px;
     overflow: hidden;
     opacity: 0;
-    padding: 0 0 0 13px;
+    padding: 0;
     animation: apparition 0.7s ease-out;
     -webkit-animation: apparition 0.7s ease-out;
     animation-fill-mode: forwards;
@@ -64,7 +67,7 @@
         padding-right: 28px;
         width: 100%;
         position: relative;
-        padding: 12px 0;
+        padding: 12px 0 12px 13px;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -141,4 +144,23 @@
 .menu__bouton{
     display: flex;
     justify-content: center;
+}
+
+
+
+
+/* MEDIA-QUERIES*/
+
+@media (min-width: 801px) {
+    .menu{
+        padding: 0 calc((100% - 730px) / 2) 4rem calc((100% - 730px) / 2);
+
+        &__h1{
+            padding: 4vw 23px 5px 5px;
+        }
+
+        &__h2{
+            margin: 4vw 0 0 7px;
+        }
+    }
 }

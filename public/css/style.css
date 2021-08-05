@@ -385,6 +385,15 @@ h4 {
   padding-right: 0.7em;
 }
 
+/*MEDIA-QUERIES*/
+@media (min-width: 801px) {
+  .footer {
+    padding: 2.5vw 5.3vw;
+  }
+  .footer__logo {
+    margin: 0 0 2vw 0;
+  }
+}
 .div_photo {
   height: 260px;
   width: 100%;
@@ -396,6 +405,11 @@ h4 {
   object-fit: cover;
 }
 
+@media (min-width: 801px) {
+  .div_photo {
+    height: 32.5vw;
+  }
+}
 .menu {
   background-color: #f6f6f6;
   margin: -3rem 0 0 0;
@@ -408,11 +422,13 @@ h4 {
   justify-content: space-between;
   margin: 0;
   padding: 30px 23px 5px 5px;
+  max-width: 702px;
 }
 .menu__h2 {
   position: relative;
-  padding: 0 0 0 7px;
-  margin: 2.3rem 0 0 0;
+  padding: 0;
+  margin: 2.3rem 0 0 7px;
+  max-width: 723px;
 }
 .menu__h2::after {
   content: "";
@@ -433,11 +449,11 @@ h4 {
   border-radius: 13px;
   box-shadow: 0 2px 8px #c3c3c3;
   margin: 1.5rem 0;
-  width: calc(100% - 13px);
-  max-width: 710px;
+  width: 100%;
+  max-width: 730px;
   overflow: hidden;
   opacity: 0;
-  padding: 0 0 0 13px;
+  padding: 0;
   animation: apparition 0.7s ease-out;
   -webkit-animation: apparition 0.7s ease-out;
   animation-fill-mode: forwards;
@@ -455,7 +471,7 @@ h4 {
   padding-right: 28px;
   width: 100%;
   position: relative;
-  padding: 12px 0;
+  padding: 12px 0 12px 13px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -550,6 +566,18 @@ h4 {
   justify-content: center;
 }
 
+/* MEDIA-QUERIES*/
+@media (min-width: 801px) {
+  .menu {
+    padding: 0 calc((100% - 730px) / 2) 4rem calc((100% - 730px) / 2);
+  }
+  .menu__h1 {
+    padding: 4vw 23px 5px 5px;
+  }
+  .menu__h2 {
+    margin: 4vw 0 0 7px;
+  }
+}
 body {
   position: relative;
 }
