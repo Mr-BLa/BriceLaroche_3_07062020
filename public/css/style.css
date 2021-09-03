@@ -2,6 +2,7 @@
 body {
   width: 100%;
   margin: 0;
+  box-sizing: border-box;
 }
 
 * {
@@ -117,10 +118,6 @@ h4 {
   background: #9356dc;
   background: linear-gradient(355deg, #a764fa 28%, #ff98e2 100%);
   box-shadow: 0px 7px 14px 5px #c3c3c3;
-  -webkit-transition: 0.3s all;
-  -moz-transition: 0.3s all;
-  -ms-transition: 0.3s all;
-  -o-transition: 0.3s all;
 }
 .bouton_rechercher-menu {
   padding: 1rem 3rem;
@@ -159,7 +156,6 @@ h4 {
 }
 
 .icone_map {
-  font-weight: 1000;
   color: #353535;
 }
 
@@ -238,7 +234,6 @@ h4 {
 .coeur-plein {
   background: #9356dc;
   background: linear-gradient(355deg, #9356dc 28%, #ff79da 100%) no-repeat;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   visibility: hidden;
@@ -393,7 +388,7 @@ h4 {
 }
 
 /*MEDIA-QUERIES*/
-@media (min-width: 801px) {
+@media screen and (min-width: 801px) {
   .footer {
     padding: 2.5vw 5.3vw;
   }
@@ -430,6 +425,10 @@ h4 {
   margin: 0;
   padding: 30px 23px 5px 5px;
   max-width: 702px;
+}
+.menu__h1 h1 {
+  font-size: 1em;
+  margin: 0;
 }
 .menu__h2 {
   position: relative;
@@ -606,6 +605,8 @@ body {
 /* SECTION 3 - FONCTIONNEMENT*/
 .fonct {
   padding: 3rem 5.333vw;
+  max-width: 680px;
+  margin: auto;
 }
 .fonct__h2 {
   padding: 0 0 1.5rem 0;
@@ -623,6 +624,7 @@ body {
   display: flex;
   align-items: center;
   box-shadow: 0 5px 12px #c3c3c3;
+  position: relative;
 }
 .fonct__filtres__link:hover {
   background-color: #f2eafb;
@@ -633,7 +635,7 @@ body {
   padding: 4px 9px;
   border-radius: 50px;
   position: absolute;
-  left: 5.546vw;
+  left: -14px;
 }
 .fonct__filtres__link__icon {
   color: #5c5c5c;
@@ -659,6 +661,10 @@ body {
 }
 .rest__h2 {
   padding: 0 0 1.5rem 0;
+}
+.rest__cards, .rest__h2 {
+  max-width: 1200px;
+  margin: auto;
 }
 
 /*CARDS*/
