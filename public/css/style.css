@@ -266,7 +266,7 @@ h4 {
 /*MENU*/
 .icones {
   position: relative;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   width: 26px;
@@ -276,11 +276,12 @@ h4 {
   width: 26px;
 }
 
-.div_coeur-plein {
+.span_coeur-plein {
+  display: flex;
   position: absolute;
   left: 0px;
   bottom: 0px;
-  top: 4px;
+  top: 3px;
   width: 26px;
 }
 
