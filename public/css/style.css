@@ -445,7 +445,7 @@ h4 {
   content: "";
   position: absolute;
   bottom: -7px;
-  left: 7px;
+  left: 1px;
   width: 40px;
   border-bottom: 3px solid #99E2D0;
 }
