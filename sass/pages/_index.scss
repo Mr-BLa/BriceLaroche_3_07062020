@@ -50,6 +50,7 @@ body{
             align-items: center;
             box-shadow:  0 5px 12px $colour-greydarker-shadow;
             position: relative;
+            transition: 0.3s all;
             
             &:hover{
                 background-color: lighten($colour-purple, 35%);

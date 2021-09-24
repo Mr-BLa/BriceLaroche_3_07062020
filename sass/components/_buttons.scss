@@ -8,9 +8,9 @@
     border-width: 0;
     font-size: 1em;
     box-shadow:  0 5px 12px $colour-greydarker-shadow;
+    transition: 0.3s all;
 
     &:hover{
-        transition: 0.3s all;
         background: rgb(147,86,220);
         background: linear-gradient(355deg, rgb(167, 100, 250) 28%, rgb(255, 152, 226) 100%);
         box-shadow:  0px 7px 14px 5px $colour-greydarker-shadow;
