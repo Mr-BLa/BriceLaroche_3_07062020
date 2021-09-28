@@ -247,15 +247,20 @@ h4 {
 }
 
 /*INDEX*/
+.cards__figure__figcaption__coeur {
+  margin: 25px 25px 0 0;
+  height: 25px;
+  width: 26px;
+}
+
 .icone_coeur {
   font-size: 1.5em;
-  margin: 25px 25px 0 0;
 }
 
 .coeur_apparition {
   position: absolute;
-  right: 0px;
-  top: 179px;
+  right: 26px;
+  top: 204px;
 }
 
 .cards__figure__figcaption__coeur:hover .coeur-vide {
